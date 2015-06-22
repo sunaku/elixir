@@ -188,6 +188,8 @@ defmodule ExUnit do
       filter
 
     * `:seed` - an integer seed value to randomize the test suite
+
+    * `:diff` - command-line arguments for the git-diff(1) program
   """
   def configure(options) do
     Enum.each options, fn {k, v} ->
